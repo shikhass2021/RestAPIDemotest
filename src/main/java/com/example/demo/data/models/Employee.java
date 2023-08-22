@@ -57,7 +57,7 @@ public class Employee {
     // digits")
     @Min(value = 1000000000, message = "Contact number must be exactly 10 digits")
     @Max(value = 9999999999L, message = "Contact number must be exactly 10 digits")
-    private int contactNo;
+    private Long contactNo;
 
     // Constructor to generate random Employee ID
 
@@ -109,11 +109,11 @@ public class Employee {
         this.emailid = emailid;
     }
 
-    public int getContactNo() {
+    public Long getContactNo() {
         return this.contactNo;
     }
 
-    public void setContactNo(int contactNo) {
+    public void setContactNo(Long contactNo) {
         this.contactNo = contactNo;
     }
 
