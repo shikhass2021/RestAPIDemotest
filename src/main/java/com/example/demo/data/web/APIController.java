@@ -70,15 +70,6 @@ public class APIController {
         return employeerepo.findAll();
     }
 
-    // public ResponseEntity<?> getAllEmployees() {
-    // if (employeerepo == null || ((Phrase) employeerepo).isEmpty()) {
-    // return ResponseEntity.notFound().build();
-    // }
-    // // return ResponseEntity.ok(employees);
-    // return (ResponseEntity<?>) employeerepo.findAll();
-
-    // }
-
     // 4. Create an API to Edit an Employee based on Employee ID or Email ID.
 
     @PutMapping("/UpdateEmp/{id}")
